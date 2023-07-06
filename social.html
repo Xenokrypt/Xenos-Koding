@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Contact</title>
+    <link rel="icon" type="image/x-icon" href="Media/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a id="title-home"href="index.html">XENO'S KODING</a></div>
+            <ul class="links">
+                <li><a id="midLinks" href="index.html">HOME</a></li>
+                <li><a id="midLinks" href="about.html">ABOUT</a></li>
+                <li><a id="midLinks" href="social.html">CONTACT</a></li>
+                <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            </ul>
+        <a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a>
+        <div class="toggle_icon"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a id="midLinks" href="index.html">HOME</a></li>
+            <li><a id="midLinks" href="about.html">ABOUT</a></li>
+            <li><a id="midLinks" href="social.html">CONTACT</a></li>
+            <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            <li><a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a></li>
+        </div>
+
+    </header>
+
+    <div class="container-contact">
+        <div class="section1-contact">
+            <p id="contact-direct">Contact us directly via:</p>
+            <a class="contact-email1">Email: </a>
+            <a class="contact-email2" href="mailto: develop120623.l.yates@softwarestudent.wearecodenation.com">Lyates @ Codenation</a>
+            <a class="contact-phone1">Phone: </a>
+            <a class="contact-phone2" href="tel: 07879 500100">07879 500100</a>
+
+            <p id="location-contact">Or find us at this location:</p>
+
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9502.593170891301!2d-2.2955698238415394!3d53.4568730802839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae750b49e4b3%3A0x9b36426385ec0ffe!2sGorse%20Hill%2C%20Stretford%2C%20Manchester%20M32%200XA!5e0!3m2!1sen!2suk!4v1688561776029!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <div class="section2-contact">
+            <h2 id="text-contact">OUR<br>SOCIALS</h2>
+            <div class="container-links">
+                <div class="socialIcons">
+                    <div class="social-container">
+                        <a href="https://twitter.com/" target="_blank"><img src="Media/twitter.png" id="social-img"></a>
+                        <a id="social-text">Twitter</a>
+                    </div>
+                    <div class="social-container">
+                        <a href="https://discord.com/" target="_blank"><img src="Media/discord.png" id="social-img"></a>
+                        <a id="social-text">Discord</a>
+                    </div>
+                    <div class="social-container">
+                        <a href="https://www.youtube.com/" target="_blank"><img src="Media/yt.png" id="social-img"></a>
+                        <a id="social-text">Youtube</a>
+                    </div>
+                    <div class="social-container">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="Media/insta.png" id="social-img"></a>
+                        <a id="social-text">Instagram</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JAVASCRIPT TO CREATE A TOGGLE BUTTON-->
+    <script>
+
+        //Yet to learn what this means
+        const toggle_icon = document.querySelector('.toggle_icon')
+        const toggle_btnicon = document.querySelector('.toggle_icon i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        //Telling it if the is a click to do this function
+        toggle_icon.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            //Changing the icon depending if it is or is not open
+            toggle_btnicon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars-staggered'
+        }
+
+    </script>
+</body>
+</html>

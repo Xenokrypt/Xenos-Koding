@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Shadows & Tentacles</title>
+    <link rel="icon" type="image/x-icon" href="Media/icon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a id="title-home"href="index.html">XENO'S KODING</a></div>
+            <ul class="links">
+                <li><a id="midLinks" href="index.html">HOME</a></li>
+                <li><a id="midLinks" href="about.html">ABOUT</a></li>
+                <li><a id="midLinks" href="social.html">CONTACT</a></li>
+                <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            </ul>
+        <a href="s&t.html" class="action_button">SHADOWS & TENTACLES</a>
+        <div class="toggle_icon"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a id="midLinks" href="index.html">HOME</a></li>
+            <li><a id="midLinks" href="about.html">ABOUT</a></li>
+            <li><a id="midLinks" href="social.html">CONTACT</a></li>
+            <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            <li><a href="s&t.html" class="action_button">SHADOWS & TENTACLES</a></li>
+        </div>
+
+    </header>
+
+    <div class="container-st">
+        <h1 id="titleST">Shadows & Tentacles</h1>
+        <p id="infoST">Try out our text-based python game via github here -</p>
+        <a id="ST-btn">Shadows & Tentacles</a>
+    </div>
+
+    <!--JAVASCRIPT TO CREATE A TOGGLE BUTTON-->
+    <script>
+
+        //Yet to learn what this means
+        const toggle_icon = document.querySelector('.toggle_icon')
+        const toggle_btnicon = document.querySelector('.toggle_icon i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        //Telling it if the is a click to do this function
+        toggle_icon.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            //Changing the icon depending if it is or is not open
+            toggle_btnicon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars-staggered'
+        }
+
+    </script>
+</body>
+</html>

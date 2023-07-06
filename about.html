@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> About</title>
+    <link rel="icon" type="image/x-icon" href="Media/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a id="title-home"href="index.html">XENO'S KODING</a></div>
+            <ul class="links">
+                <li><a id="midLinks" href="index.html">HOME</a></li>
+                <li><a id="midLinks" href="about.html">ABOUT</a></li>
+                <li><a id="midLinks" href="social.html">CONTACT</a></li>
+                <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            </ul>
+        <a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a>
+        <div class="toggle_icon"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a id="midLinks" href="index.html">HOME</a></li>
+            <li><a id="midLinks" href="about.html">ABOUT</a></li>
+            <li><a id="midLinks" href="social.html">CONTACT</a></li>
+            <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            <li><a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a></li>
+        </div>
+
+    </header>
+
+    <div class="page_flex">
+        <div class="section1-about">
+            <img src="Media/codelaptop.png" id="coding_img">
+            <p id="desc1">Coding brings me immense joy and fulfillment by allowing me to unleash my creativity, transform ideas into functional applications, and experience a sense of accomplishment. It keeps me engaged through continuous learning and intellectual stimulation, as there's always something new to explore. Coding also empowers me to make a positive impact by creating innovative solutions that solve real-world problems. Overall, coding combines my love for creativity, intellectual challenge, and the potential to make a difference in a captivating and rewarding way, and i advise EVERYONE to try it!</p>
+        </div>
+
+        <div class="section2-about">
+            <img src="Media/gamingbackground.png" id="gaming_img">
+            <p id="desc1">Gaming brings me immense joy and satisfaction for various reasons. Firstly, it allows me to immerse myself in captivating virtual worlds, where I can embark on thrilling adventures and explore fantastical realms. The interactive nature of gaming provides an engaging and dynamic experience that keeps me entertained for hours. Moreover, gaming serves as a means of escape, offering a break from the stresses of everyday life and a chance to unwind and relax. It also provides a social outlet, as I can connect and interact with friends and fellow gamers, fostering a sense of community. Additionally, gaming stimulates my problem-solving skills and strategic thinking, as many games require strategic planning, quick decision-making, and adaptability. One of my favourite game would be Cyberpunk 2077. It had a rough start, but over its patches, i found it really entertaing and captivating while becoming really addicted to it, constantly wanting to play just so i could finish the story. Also it has the legendary Keanu Reeves in it. Who wouldnt want to play it??</p>
+        </div>
+
+        <div class="section1-about">
+            <img src="Media/DROGON.png" id="drogon_img">
+            <p id="desc1">I love to watch many Tv shows and Movies. But prehaps my favourite Tv show would be Game of Thrones. It kept me engaged the entire time wanting to watch one epsidoe after another, you get to explore a world where power plays a big part, and as an extra you get too see people get their heads chopped off and other really gory bits. You really fall in love with the characters (GOD FORBID IF I EVER MEET EMELIA CLARKE)...and the dragons along with the cities. I reccommend it, however we ignore the last season...we dont talk about that.</p>
+        </div>
+
+        <div class="section3-about">
+            <iframe width="855" height="481" src="https://www.youtube.com/embed/XoBrhuKpTNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!--JAVASCRIPT TO CREATE A TOGGLE BUTTON-->
+    <script>
+
+        //Yet to learn what this means
+        const toggle_icon = document.querySelector('.toggle_icon')
+        const toggle_btnicon = document.querySelector('.toggle_icon i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        //Telling it if the is a click to do this function
+        toggle_icon.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            //Changing the icon depending if it is or is not open
+            toggle_btnicon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars-staggered'
+        }
+
+    </script>
+</body>
+</html>

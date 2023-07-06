@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Login</title>
+    <link rel="icon" type="image/x-icon" href="Media/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a id="title-home"href="index.html">XENO'S KODING</a></div>
+            <ul class="links">
+                <li><a id="midLinks" href="index.html">HOME</a></li>
+                <li><a id="midLinks" href="about.html">ABOUT</a></li>
+                <li><a id="midLinks" href="social.html">CONTACT</a></li>
+                <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            </ul>
+        <a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a>
+        <div class="toggle_icon"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a id="midLinks" href="index.html">HOME</a></li>
+            <li><a id="midLinks" href="about.html">ABOUT</a></li>
+            <li><a id="midLinks" href="social.html">CONTACT</a></li>
+            <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            <li><a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a></li>
+        </div>
+
+    </header>
+
+    <div class="section1-login">
+
+
+        <div class="container1-login">
+
+            <a id="loginTitle">LOGIN</a>
+            <a class="user-pass">Username:</a>
+            <input type="text" class="inputbox">
+            <a class="user-pass">Password:</a>
+            <input type="password" class="inputbox">
+
+            <a id="forgotten" href="#" onclick="well()">Forgot your password?</a>
+
+            <input type="button" class="login-btn" value="LOGIN">
+
+            <a id="qa">Don't have an account?</a>
+            <a id="register">Register here.</a>
+
+        </div>
+
+    </div>
+
+    <!--JAVASCRIPT TO CREATE A TOGGLE BUTTON-->
+    <script>
+
+        function well() {
+            alert("Well tough luck!")
+        }
+
+        //Yet to learn what this means
+        const toggle_icon = document.querySelector('.toggle_icon')
+        const toggle_btnicon = document.querySelector('.toggle_icon i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        //Telling it if the is a click to do this function
+        toggle_icon.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            //Changing the icon depending if it is or is not open
+            toggle_btnicon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars-staggered'
+        }
+
+    </script>
+</body>
+</html>

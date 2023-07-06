@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Xeno's Koding</title>
+    <link rel="icon" type="image/x-icon" href="Media/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a id="title-home"href="index.html">XENO'S KODING</a></div>
+            <ul class="links">
+                <li><a id="midLinks" href="index.html">HOME</a></li>
+                <li><a id="midLinks" href="about.html">ABOUT</a></li>
+                <li><a id="midLinks" href="social.html">CONTACT</a></li>
+                <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            </ul>
+        <a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a>
+        <div class="toggle_icon"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a id="midLinks" href="index.html">HOME</a></li>
+            <li><a id="midLinks" href="about.html">ABOUT</a></li>
+            <li><a id="midLinks" href="social.html">CONTACT</a></li>
+            <li><a id="midLinks" href="login.html">LOGIN</a></li>
+            <li><a href="https://github.com/Xenokrypt/Shadows-Tentacles" class="action_button" target="_blank">SHADOWS & TENTACLES</a></li>
+        </div>
+
+    </header>
+
+    <div class="section1-home">
+
+        <h1 id="welcome-home">WELCOME TO XENO'S KODING</h1>
+        <p id="intro_para-home">Hello! My name is Lee, and I'm a passionate gamer and coding enthusiast. I love exploring the vast worlds of video games and bringing my ideas to life through coding. 
+            In addition, I'm a huge fan of the TV shows such as Game of Thrones. 
+            In my gaming community i am mainly known as Xenokrypt, hence the name of the website, or other funny nicknames sometimes. I have decided to create this website and share a little bit about myself. 
+            Check out some screenshots of my interests down below!</p>
+
+    </div>
+
+    <section class="section2-home">
+
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide1" src="Media/cyberpunk.jpg" alt="A background image of night city from cyberpunk with main character in front after blowing the city up.">
+                <img id="slide2" src="Media/coding.jpg" alt="A bit of HTML code slightly distorted.">
+                <img id="slide3" src="Media/coding2.png" alt="Sample python code from the game Shadows & Tentacles.">
+                <img id="slide4" src="Media/dragon1.png" alt="A fan-art made drawing of the dead ice dragon being ridden by the ice king from Game of Thrones.">
+                <img id="slide5" src="Media/dragon5.png" alt="Queen Daenerys Targareon standing , while Drogon guarding her from behind.">
+            </div>
+            <div class="slider-btn">
+                <a class="dots" href="#slide1"></a>
+                <a class="dots" href="#slide2"></a>
+                <a class="dots" href="#slide3"></a>
+                <a class="dots" href="#slide4"></a>
+                <a class="dots" href="#slide5"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--JAVASCRIPT TO CREATE A TOGGLE BUTTON-->
+    <script>
+
+        //Yet to learn what this means
+        const toggle_icon = document.querySelector('.toggle_icon')
+        const toggle_btnicon = document.querySelector('.toggle_icon i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        //Telling it if the is a click to do this function
+        toggle_icon.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            //Changing the icon depending if it is or is not open
+            toggle_btnicon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars-staggered'
+        }
+
+    </script>
+
+    <footer>
+
+        <p>!!! DISCLAIMER !!!  -  This website was made purely for educational purposes only. Also do not take anything personal. Viewer discretion is advised.</p>
+
+    </footer>
+
+</body>
+</html>
