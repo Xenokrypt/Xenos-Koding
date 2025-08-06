@@ -19,7 +19,7 @@
 body {
     height: 100vh;
     background-color: grey;
-    background-image: url("Media/background.png");
+    background-color: seashell;
     background-size: cover;
     background-position: center;
 }
@@ -639,3 +639,4 @@ li {
     scale: 1.05;
     background-color: #ffffff;
 }
+
